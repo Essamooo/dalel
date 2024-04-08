@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/utils/constants/strings.dart';
 import '../../../../core/utils/constants/text_styles.dart';
+import '../../../../core/widgets/custom_button.dart';
+import 'widget/custom_nav_bar.dart';
 import 'widget/onboarding_widget_body.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -12,19 +14,17 @@ class OnboardingView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16.0,
-            vertical: 40.0,
-          ),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             children: [
-              const Text(
-                AppStrings.skip,
-                textAlign: TextAlign.end,
-                style: CustomTextStyles.poppinsFont16Black400Weight,
-              ),
+              const SizedBox(height: 40.0),
+              const CustomNavBar(),
               const SizedBox(height: 32.0),
               OnboardingWidgetBody(),
+              const CustomButton(
+                text: AppStrings.next,
+              ),
+              const SizedBox(height: 17.0),
             ],
           ),
         ),
@@ -32,3 +32,5 @@ class OnboardingView extends StatelessWidget {
     );
   }
 }
+
+

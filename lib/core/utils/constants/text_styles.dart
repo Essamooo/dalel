@@ -30,4 +30,11 @@ class CustomTextStyles {
     color: AppColors.black,
     fontWeight: FontWeight.w500,
   );
+  
+  static const TextStyle poppinsFont18White500Weight = TextStyle(
+    fontFamily: 'PoppinsMedium',
+    fontSize: 18.0,
+    color: AppColors.white,
+    fontWeight: FontWeight.w500,
+  );
 }

@@ -19,17 +19,15 @@ class OnboardingWidgetBody extends StatelessWidget {
               Image.asset(Assets.imagesOnboarding1),
               const SizedBox(height: 24.0),
               CustomSmoothPageIndicator(pagecontroller: _pagecontroller),
-              const Padding(
-                padding: EdgeInsets.only(
-                    left: 30.0, right: 30.0, top: 32.0, bottom: 16.0),
-                child: Text(
-                  'Explore The history with Dalel in a smart way ',
-                  textAlign: TextAlign.center,
-                  style: CustomTextStyles.poppinsFont24Black500Weight,
-                ),
-              ),
+              const SizedBox(height: 32.0),
               const Text(
-                'Using our app’s history libraries you can find many historical periods ',
+                'Explore The history with\nDalel in a smart way',
+                textAlign: TextAlign.center,
+                style: CustomTextStyles.poppinsFont24Black500Weight,
+              ),
+              const SizedBox(height: 16.0),
+              const Text(
+                'Using our app’s history libraries\nyou can find many historical periods',
                 textAlign: TextAlign.center,
                 style: CustomTextStyles.poppinsFont16Black300Weight,
               ),
